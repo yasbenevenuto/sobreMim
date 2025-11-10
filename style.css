@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body, html {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+#sobre-mim {
+    background-image: url(./images/background-image.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#sobre-mim, #lugares-conheci {
+    background-color: black;
+    color: white;
+}
+#curiosidades, #lugares-conhecer {
+    background-color: #D0D0D0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 4vh;
+}
+
+
+header {
+    padding: 2vh;
+    background-color: rgb(18, 18, 18);
+}
+
+#references-site {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+#references-site a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#references-site a:hover {
+    background-color: rgba(255, 255, 255, 0.134);
+    transition: 0.6s ease;
+    color: #f2cf68;
+}
+
+
+#sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#div-sobre-mim {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+    margin: auto;
+}
+
+#div-sobre-mim h1 {
+    font-size: 68px;
+}
+
+#div-sobre-mim p {
+    font-size: 12px;
+}
+
+#div-sobre-mim img {
+    max-width: 15vw;
+}
+
+#img-amarela {
+    width: 100vw;
+    margin-top: auto;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 3vh;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+}
+
+.cards li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 15vw;
+    height: 40vh;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px #00000030;
+    color: black;
+    font-weight: 500;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+li img {
+    height: 200px;
+}
+
+
+.cards li span {
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+
+.cards li:hover {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cards li:hover span {
+    opacity: 0;
+}
+
+
