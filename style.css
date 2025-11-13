@@ -82,6 +82,20 @@ header {
     max-width: 15vw;
 }
 
+.content-familia, .content-vida-atual {
+    display: flex;
+    gap: 10vw;
+    align-items: center;
+}
+.content-familia div, .content-vida-atual div {
+    display: flex;
+    gap: 2vh;
+
+}
+.content-familia img, .content-vida-atual img {
+    max-width: 20vw;
+    object-fit: contain;
+}
 
 /* CONHECIMENTOS */
 #conhecimentos .content-conhecimentos {
@@ -90,7 +104,7 @@ header {
     align-items: center;
     width: 100vw;
 }
-#conhecimentos .paragrafo {
+ .paragrafo {
     width: 30vw;
     font-size: 2rem;
 }
